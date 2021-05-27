@@ -1,0 +1,38 @@
+   man man
+    :full manual
+   man cat
+    :manual of command cat
+   cat > student.txt
+    :overwrites one file contents
+   cp student.txt student.txt.copy
+    :copy contents of one file into another
+   head -n 3 student.txt
+    :displaying the first 3 lines in the file
+   tail -n 5 student.txt
+    :displaying the last 5 lines in the file
+  mkdir S4CSE
+    :making a directory
+  pwd
+    :shows current direcotry
+  cat >> testfile.txt
+    :create a file and adding texts || adding texts into and existing file
+  cat testfile.txt 
+    :create a file
+  mv testfile.txt hello.txt sam_dir/
+    :move two files into a directory
+  rm *.txt
+    :remove all file with extension .txt
+  touch aa.txt
+    :creating file
+  rm -i aa.txt
+    :remove a file showing a warning
+  find . -name "*.txt"
+    :search for files with '.txt' extension
+  find . -name sample.txt
+    :search for file sample
+  find . -iname Sample.txt
+    :search for file sample without considering the case sensitive
+  find . -type d -name a
+    :search for directory, with name 'a'
+  history 
+    : display last executed commands
