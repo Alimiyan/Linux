@@ -36,3 +36,23 @@
     :search for directory, with name 'a'
   history 
     : display last executed commands
+
+  ls -l
+    : list the files and folders with more details
+  chmod
+    : change the permission 
+  chmod a+w sample.txt
+    : change permission 'a' = all users and group, 'g' = groups, 'u'= user, 'o' other users
+    : 'w'= write permission, 'r'= read, 'x' execute..
+  chmod -R u+w a
+    : recersively add write perssion to all things inside 'a' dierctory
+  chmod -R u-w a
+    : recersively remove writing persion for the user
+    : '-' for removing permission and '+' for adding permission
+  chmod -R a=w a
+    : recersively set writing persimission only for all the users and groups in the 'a' dierctory
+  chmod +w sample.txt
+    : add writing permission to the users and groups for the sample file
+    : likewise for the '-' 
+  chmod a=w,u=r,o=x sample.txt
+    : giving multiple permissions
