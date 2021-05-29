@@ -56,3 +56,19 @@
     : likewise for the '-' 
   chmod a=w,u=r,o=x sample.txt
     : giving multiple permissions
+  htop
+    : processes running, modified version of 'top' command, 
+    : for installation, sudo apt htop
+  killall htop
+    : killing processes with followed by process name
+  kill 123
+    : killing processes with process id
+  ps
+    : running current user processes
+  ps a
+    : running all user processes
+  ps au
+    : running all user processes with user info
+  ps aux
+    : x for all the system processes
+   
