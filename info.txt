@@ -71,4 +71,25 @@
     : running all user processes with user info
   ps aux
     : x for all the system processes
-   
+  ifconfig
+    : ipaddresses, connected devices and networking stuff
+  ip -4 addr
+    : ipv4 address
+  ip -6 addr
+    : ipv6 addr
+  netstat
+    : detailed information of network connectivity and info
+  netstat -a
+    : listening ports or connection
+  netstat -at
+    : tcp connection
+  netstat -l
+    : active ports
+  netstat -u
+    : udp ports
+  curl https://google.com
+    : response of the website
+  curl -o response https://google.con
+    : getting the response into a file named 'response'
+  ping google.com
+    : pinging google
