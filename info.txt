@@ -93,3 +93,21 @@
     : getting the response into a file named 'response'
   ping google.com
     : pinging google
+  env
+    : shows environment variables
+  printenv blackpearl
+    : shows env variables of the specific user/varible
+  export VAR=test
+    : create or modify the variable 'VAR' with value 'test' (temoporary var)
+  unset VAR
+    : remove var
+  nano
+    : text editor
+  nano .bashrc
+    : can edit the file to create a permanent env var,
+    : export VAR "test"
+    : can execute in the user home folder 'root'
+    : only work by updating file
+    : source .bashrc
+  
+  
