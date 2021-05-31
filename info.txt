@@ -109,5 +109,7 @@
     : can execute in the user home folder 'root'
     : only work by updating file
     : source .bashrc
-  
-  
+  nano test.txt
+    : text editor
+  vi test.txt
+    : vim text editor
