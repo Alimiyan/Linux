@@ -113,3 +113,28 @@
     : text editor
   vi test.txt
     : vim text editor
+  grep hello sample.txt
+    : finds the pattern 'hello' in the file sample
+  grep a. sample.txt
+    : print the pattern 'a' followed by a character
+  grep a.a sample.txt
+    : print pattern 'a' followed by a character and 'a' 
+  grep [A,B].A sample.txt
+    : looks for patter starts with 'A' or 'B' followed by a character and ends with 'A'
+  grep "" sample.txt
+    : better to use cautation marks for the character
+  grep "A.B\|B.A" sample.txt
+    : looks for 'A' followed by a character ends with 'B' or 'B' followed by a character ends with 'A'
+  grep AB$ sample.txt
+    : looks for 'AB' at the end of the line
+  grep ^AB sample.txt
+    : looks for 'AB' at the beginning of the line
+  grep -n ABC sample.txt
+    : shows the line number along the pattern
+  grep -C A.B sample.txt
+    : shows 4 lines before and after the character A.B
+  ls | grep sa
+    : shows files with pattern sa
+  grep -r hello home
+    : finds the character in the whole directory
+    : searches through all the files 
