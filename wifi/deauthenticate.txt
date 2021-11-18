@@ -1,0 +1,22 @@
+To enable Monitor mode :
+
+ifconfig wlan0 down
+airmon-ng check kill
+ifconfig wlan0 mode monitor
+ifconfig wlan0 up
+iwconfig
+
+ or
+ 
+ifconfig wlan0 down
+airmon-ng check kill
+airmon-ng start wlan0
+iwconfig
+
+
+To check Connected devices list
+airodump-ng --bssid <bssid> --channel 2 --write test.txt <adapter>
+wireshark , file open , open cap
+
+Deauth Attack:
+aireplay-ng --deauth 10000000 -a
