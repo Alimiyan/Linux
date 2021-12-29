@@ -162,3 +162,14 @@
     :works like a system check at boot up
   less sample.txt
     : output the file contents and navigate through them
+   
+  ==============================================================================
+  
+  proxychains
+  
+  service tor status
+  service tor start
+  service tor stop
+  
+  eg: proxychains firefox dnsleaktest.com
+   : we have start the tor service inorder to use the tor proxychain
