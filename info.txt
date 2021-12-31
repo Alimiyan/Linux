@@ -182,3 +182,10 @@
   ufw enable
   ufw disable
   ufw status
+  ufw default deny incoming
+  ufw default allow outgoing
+  ufw allow ssh
+   - allows incoming ssh connections
+  ufw deny ssh
+  ufw allow http
+  ufw deny 21/tcp
