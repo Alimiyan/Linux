@@ -173,3 +173,12 @@
   
   eg: proxychains firefox dnsleaktest.com
    : we have start the tor service inorder to use the tor proxychain
+   
+  ==============================================================================
+  firewall
+  
+  ufw firewall
+  
+  ufw enable
+  ufw disable
+  ufw status
